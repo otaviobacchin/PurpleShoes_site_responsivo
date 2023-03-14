@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;  
+}
+
+header {
+    background-color: rgb(95, 14, 170);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    padding: 0 16px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.sobre-a-loja img {
+    max-width: 50%;
+}
+
+section h2 {
+    margin-bottom: 35px;
+    padding-bottom: 16px;
+    color: rgb(95, 14, 170);
+    border-bottom: 3px solid rgb(95, 14, 170);
+}
+
+.sobre-a-loja p {
+    text-align: justify;
+}
+
+section .container {
+    display: flex;
+    padding: 16px 8px;
+}
+
+.sobre-a-loja img {
+    padding-right: 16px;
+}
+
+.container .sobre-descricao {
+    padding: 8px 16px;
+}
+
+.sobre-a-loja {
+    margin-bottom: 26px;
+}
+
+.sessao-produtos .container {
+    display: block;
+}
+
+.sessao-produtos ul {
+    list-style: none;
+}
+
+.sessao-produtos h3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.sessao-produtos p {
+    text-align: justify;
+}
+
+.sessao-produtos .produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    column-gap: 3%;
+    justify-content: center;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+.produtos button {
+    margin-top: 16px;
+    padding: 6px;
+    width: 100%;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(95, 14, 170);
+}
+
+.produtos button:hover {
+    background-color: rgb(127, 29, 220);
+}
+
+footer {
+    margin-top: 24px;
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(95, 14, 170);
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header ul {
+        align-items: center;
+    }
+
+    .menu {
+        padding: 0;
+        display: block;
+        margin-top: 16px;
+        font-size: small;
+    }
+
+    .menu li {
+        width: 150px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .sobre-a-loja .container{
+        display: block;
+    }
+
+    .sobre-a-loja .container img {
+        padding: 0;
+        display: flex;
+        margin: auto;
+        max-width: 90%;
+        justify-content: center;
+    }
+    
+    .sobre-descricao h2 {
+        margin-top: 20px;
+    }
+
+    .sessao-produtos {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sessao-produtos .produtos {
+        display: block;
+    }
+
+    .produtos button {
+        margin-bottom: 50px;
+    }
+
+    footer {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        max-width: 85%;
+    }
+
+    .sobre-a-loja .container{
+        display: block;
+    }
+
+    .sobre-a-loja .container img {
+        padding: 0;
+        display: flex;
+        margin: auto;
+        max-width: 100%;
+        width: 95%;
+    }
+    
+    .sobre-descricao h2 {
+        margin-top: 20px;
+    }
+
+    .sessao-produtos {
+        max-width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sessao-produtos .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        justify-content: center;
+    }
+
+    .produtos button {
+        margin-bottom: 50px;
+    }
+}
